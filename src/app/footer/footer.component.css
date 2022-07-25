@@ -3,7 +3,7 @@ footer {
     background-color: #263238;
     min-height: 160px;
     padding: 10px 0px 0 0px;
-    position: absolute;
+    position: static;
     bottom: 0;
 }
 

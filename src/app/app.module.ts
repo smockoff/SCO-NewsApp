@@ -6,19 +6,29 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TopHeadlineComponent } from './top-headline/top-headline.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SconewsapiService } from './services/sconewsapi.service';
+import { TechComponent } from './tech/tech.component';
+import { HealthComponent } from './health/health.component';
+import { SportComponent } from './sport/sport.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    TopHeadlineComponent
+    TopHeadlineComponent,
+    TechComponent,
+    HealthComponent,
+    SportComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SconewsapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
